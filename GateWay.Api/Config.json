@@ -1,0 +1,20 @@
+{
+  "ReRoutes ": [
+    {
+      "DownstreamPathTemplate": "/api/GenerateTicket",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 53460
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/GenerateTicket",
+      "UpstreamHttpMethod": [ "GET" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:61319"
+  }
+
+}  
